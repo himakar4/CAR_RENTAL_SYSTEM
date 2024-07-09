@@ -1,0 +1,447 @@
+body {
+    background: url('images/car2.jpg') no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.right {
+    position: fixed;
+    top: 50px;
+    right: 55px;
+}
+
+button {
+    background-color: rgb(50, 43, 43);
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.left {
+    position: fixed;
+    top: 20px;
+    left: 12px;
+    padding: 0px;
+}
+
+.mid {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mid ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.mid ul li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.mid ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.mid ul li a:hover {
+    cursor: pointer;
+    background-color: rgba(17, 16, 16, 0.1);
+    border-radius: 10px;
+}
+
+.left p {
+    font-family: fantasy;
+    font-size: 30px;
+    color: black;
+}
+
+#login-container.show {
+    display: block;
+}
+
+#login-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    z-index: 999;
+}
+
+
+
+.login-container {
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 300px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* Hidden by default */
+}
+
+.login-container.show {
+    display: block;
+    /* Show when toggled */
+    -webkit-animation: animatezoom 0.136s;
+    animation: animatezoom 0.136s;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container input[type="submit"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.create {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.create a {
+    text-decoration: none;
+    color: #73bd76
+}
+
+.admin {
+    padding: 37px;
+    font-size: 27px;
+}
+
+#home {
+    display: inline-block;
+    margin: 150px;
+    color: #fffa90;
+}
+
+.rent {
+    font-size: 37px;
+}
+
+.dream {
+    font-size: 50px;
+    text-decoration: solid;
+    color: paleturquoise;
+}
+
+.lines {
+    font-size: 27px;
+}
+
+#services {
+
+    margin: 120px;
+}
+
+#about {
+
+    margin: 120px;
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(0)
+    }
+}
+
+#navi {
+    display: block;
+    border: 2px solid rgb(17, 16, 16);
+}
+
+.sign {
+    font-size: 20px;
+}
+
+#contact {
+
+    height: 75%;
+    background-color: white;
+
+    margin-top: 50px;
+}
+
+.co {
+    border: 2px solid violet;
+    display: inline;
+}
+
+footer {
+    background-color: #333;
+    /* Change the background color */
+    color: #fff;
+    /* Change the text color */
+    padding: 20px;
+    /* Add padding for spacing */
+    text-align: center;
+    /* Align text to the center */
+    position: fixed;
+    /* Fixed positioning at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Define animation for entering */
+@keyframes animateIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        /* Adjust as needed */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to specific elements */
+.animate-in {
+    animation: animateIn 0.7s ease forwards;
+}
+
+
+footer div {
+    font-size: 14px;
+    /* Adjust font size */
+}
+
+footer a {
+    color: white;
+}
+
+/* Optional: Add hover effect */
+footer:hover {
+    background-color: #555;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contact .content h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: orange;
+    margin-top: -100px;
+    size: 10px 20px;
+}
+
+.contact .content p {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    margin-left: 200px;
+    margin-top: -5px;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 5px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 600;
+    color: white;
+}
+
+.container .contactInfo .box .text p {
+    font-weight: 600;
+    color: orange;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 350px;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: orange;
+    font-weight: 700;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#services {
+    display: none;
+    color: #fffa90;
+    padding: 20px;
+}
+
+#services .service-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+#services .service-box b {
+    font-size: 29px;
+    color: bisque;
+}
+
+#services .service-box span {
+    font-size: 20px;
+}
+
+.service-container {
+    display: flex;
+}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            background: #f7f2f2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .gallery {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-flow: flow;
+            justify-content: center;
+        }
+
+        .column {
+            flex: 25%;
+            padding: 10px;
+            /* display: inline-block; */
+            justify-content: center;
+        }
+
+        .box {
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 10px;
+            /* margin: 10px;  */
+            margin-bottom: 50px;
+        }
+
+        .box:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            transform: scale(0.55);
+        }
+
+        .box img {
+            position: center;
+            width: 320px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box p img {
+            position: center;
+            width: 50px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .column p {
+            text-align: right;
+            font-size: 16px;
+            color: black;
+            margin: 5px 10px 5px 10px;
+            /* border-color: white; */
+
+        }
+
+        .box p {
+            display: block;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .box p img {
+            width: 5%;
+            height: 5%;
+        }
+
+        .box span img {
+            width: 5%;
+            height: 5%;
+        }
+
+        #seat,
+        #speedo {
+            display: flex;
+            align-items: center;
+            background: white;
+        }
+
+        #seat img,
+        #speedo img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            margin-left: 20px;
+            background: white;
+        }
+
+        #seat p,
+        #speedo p {
+            margin: 0;
+            width: 225px
+        }
+
+        #carname {
+            background: white;
+        }
+
+        #carname p {
+            text-align: center;
+            /* background: white; */
+            /* background-color: white; */
+        }
+
+        #button1 {
+            margin-left: 40px;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); */
+            transform: scale(0.55);
+            background-color: rgba(128, 128, 128, 0.527);
+            border: none;
+        }
+
+        h2 {
+            margin: 0;
+            /* Remove default margin */
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.box ,button').mouseenter(function () {
+                $(this).css('transform', 'scale(1.05)');
+            }).mouseleave(function () {
+                $(this).css('transform', 'scale(1)');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <center>
+        <h2>AVAILABLE CARS</h2>
+    </center>
+    <div id="button1"><button onclick="window.location.href='cuspage.php'">Home</button></div>
+    <div class="gallery">
+        <div class="row">
+            <div class="column">
+                <a href="Bugatides.html">
+                    <div class="box">
+                        <img src="bugati.jpg" alt="Bugati Car" id=img1>
+                        <div id="carname">
+                            <p><b>Bugati Chiron</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>2 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>150 kmph</p>
+
+                        </div>
+                        <p>Per Day : 25000</p>
+                        <button  style="font-size: 15px; background-color: green;">BOOK NOW</button>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="rollsdes.html">
+                    <div class="box">
+                        <img src="rolls.jpg" alt="Rolls Roys Car" id="img2">
+                        <div id="carname">
+                            <p><b>Rolls Royce JCT600 </b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="benzdes.html">
+                    <div class="box">
+                        <img src="benz.jpg" alt="Benz Car" id="img3">
+                        <div id="carname">
+                            <p><b>Mercedes Benz </b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>100 kmph </p>
+                        </div>
+                        <p>Per Day : 10000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="audides.html">
+                    <div class="box">
+                        <img src="audi.jpg" alt="Audi Car" id="img4">
+                        <div id="carname">
+                            <p><b>Audi Skysphere</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>180 kmph </p>
+                        </div>
+                        <p>Per Day : 30000</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="rangedes.html">
+                    <div class="box">
+                        <img src="range.jpg" alt="Range Rover Velar Car" id="img5">
+                        <div id="carname">
+                            <p><b>Range Rover Velar</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="porschedes.html">
+                    <div class="box">
+                        <img src="por.jpg" alt="Porsche 911 Car" id="img6">
+                        <div id="carname">
+                            <p><b>Porsche 911 Carrera Cabrio (Grey)</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="mahendrades.html">
+                    <div class="box">
+                        <img src="mahe.jpg" alt="Mahendra XUV 900 Car" id="img7">
+                        <div id="carname">
+                            <p><b>Mahendra XUV 900</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="lamborghinides.html">
+                    <div class="box">
+                        <img src="lambo.jpg" alt="Lamborghini Urus Car" id="img8">
+                        <div id="carname">
+                            <p><b>Lamborghini Urus</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                        
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="teslades.html">
+                    <div class="box">
+                        <img src="tes.jpg" alt="Tesla Car" id="img9">
+                        <div id="carname">
+                            <p><b>Tesla Cybertruck</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="ferrarides.html">
+                    <div class="box">
+                        <img src="ferrari.jpg" alt="Ferrari SF90 Stradale Car" id="img10">
+                        <div id="carname">
+                            <p><b>Ferrari FS90 Stradale</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="koenides.html">
+                    <div class="box">
+                        <img src="koin.jpg" alt="Koenigsegg Agera RS Car" id="img11">
+                        <div id="carname">
+                            <p><b>Koenigsegg Agera RS</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+            <div class="column">
+                <a href="acurades.html">
+                    <div class="box">
+                        <img src="acur.jpg" alt="Acura NSX Car" id="img12">
+                        <div id="carname">
+                            <p><b>Acura NSX</b></p>
+                        </div>
+                        <div id="seat">
+                            <img src="seat.jpg">
+                            <p>4 Seater </p>
+                        </div>
+                        <div id="speedo">
+                            <img src="speed.jpg">
+                            <p>120 kmph </p>
+                        </div>
+                        <p>Per Day : 15000</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function fun1() {
+            document.getElementById("img1").innerHTML = "Description about image 1";
+        }
+    </script>
+</body>
+
+</html>
