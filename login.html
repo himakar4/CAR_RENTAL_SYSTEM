@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url('images/car2.jpg') no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .back {
+            top: 34px;
+            right: 40px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: 0.4s ease;
+            position: fixed;
+            padding: 7px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        #login-container {
+            /* display: none; */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            z-index: 999;
+        }
+
+
+
+        .login-container {
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            width: 300px;
+            /* display: none; */
+            justify-content: center;
+            align-items: center;
+            /* Hidden by default */
+        }
+
+        .login-container.show {
+            display: block;
+            /* Show when toggled */
+            -webkit-animation: animatezoom 0.136s;
+            animation: animatezoom 0.136s;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .sign {
+            font-size: 20px;
+            color: #45a049;
+        }
+
+        .login-container input[type="submit"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="back"><a href="page.html">Back</a></button>
+    <div id="login-container" class="login-container" align="center">
+        <div class="bod">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <br><br>
+                <input type="submit" value="Login">
+                <br><br>
+                <div class="create">
+                    <span>Don't have an account ?</span><br><span><a href="register.php" class="sign">Sign up</a>
+                        here</span>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
