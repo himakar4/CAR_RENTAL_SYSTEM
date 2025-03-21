@@ -1,3 +1,19 @@
+# Home Page
+![Screenshot_(3) 1](https://github.com/user-attachments/assets/e46be77b-c9f1-451a-94a9-248616f03453)
+# Admin Page 
+![Screenshot_(4) 1](https://github.com/user-attachments/assets/8589029c-f675-49e9-8b5b-c268cf9292b5)
+![Screenshot_(7) 1](https://github.com/user-attachments/assets/c1ce778f-487a-4fb3-b539-365060cc58c1)
+![Screenshot_(6) 1](https://github.com/user-attachments/assets/bd30ccaa-776d-4197-848f-e2ea85adc670)
+![Screenshot_(5) 1](https://github.com/user-attachments/assets/1e80da8d-7427-46b6-84fa-fda190e74fc6)
+![Screenshot_(8) 1](https://github.com/user-attachments/assets/7fab9a5a-1ade-4b81-8aaf-838660c013dc)
+# Custumer Page
+![Screenshot_(2) 1](https://github.com/user-attachments/assets/01e7daf2-498b-46e6-8021-360991d9ed20)
+![Screenshot_(9) 1](https://github.com/user-attachments/assets/a4f5855b-da96-471b-88a7-bb91fd1ab20e)
+
+
+
+
+
 # Introduction
 - This is a car rental website project.
 - The purpose of this project is to create a car rental website.
